@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import RecipeReviewCard from "./myComponents.js/myCard";
+import myArr from './myComponents.js/myArray';
+import BasicButtons from './myComponents.js/button'
 
 function App() {
+  function MYcArd(val) {
+    return (
+      <RecipeReviewCard
+        pName={val.name}
+        des={val.discpriton}
+        img={val.imge}
+        pri={val.price}
+      />
+    );
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="main">
+        <BasicButtons />
+        <div className="App">
+          {myArr.map(MYcArd)}
+        </div>
+      </div>
+    </>
   );
 }
 
