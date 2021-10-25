@@ -16,6 +16,11 @@ function App() {
   }
   return (
     <>
+    <select name="" id="drop">
+      <option value="">Select your categorize</option>
+      <option value="">Men</option>
+      <option value="">Chlid</option>
+    </select>
       <div className="main">
         <BasicButtons />
         <div className="App">

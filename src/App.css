@@ -8,7 +8,10 @@
   
   padding: 26px  26px  26px;
 }
-
+#drop{
+  margin: 20px;
+  font-size: 20px;
+}
 .head{
   text-align: center;
   margin-bottom: 30px;
